@@ -4,8 +4,9 @@
         padding: 0;
         box-sizing: border-box;
         background-image: url(../images/mobile_background.jpg);
-        background-color: aquamarine;
-        background-size: 100%;
+        background-color: rgb(255, 255, 255);
+        background-size: cover;
+        background-position-y: 80px;
         background-repeat: no-repeat;
         font-family: "Ford Antenna Light";
     }
@@ -13,7 +14,6 @@
     .mobile_header{
         width: 100%;
         height: 80px;
-        margin: 30px 0px;
         background: rgb(255, 255, 255);
         display: flex;
         justify-content: center;
@@ -29,13 +29,14 @@
         width: 100%;
         height: 80px;
         display: flex;
+        margin: 25px 0px;
         background: transparent;
         align-items: center;
         justify-content: center;
     }
 
     .mobile_message > .mobile_h2{
-        color: rgba(242, 255, 247, 0.958);
+        color: rgba(226, 255, 242, 0.958);
         background: transparent;
         text-align: center;
         font-size: 35px;
@@ -77,10 +78,10 @@
 
 
     .mobile_form > .mobile_input > input::placeholder{
-        color: rgba(255, 255, 255, 0.944);
+        color: rgb(255, 255, 255);
         font-weight: 600;
-        text-shadow: 0px 0px 5px rgb(0, 0, 0);
-        
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.87);
+        padding-left: 20px;
     }
 
     .mobile_button{
@@ -96,10 +97,24 @@
         padding: 10px;
         width: 60%;
         border-radius: 15px;
-        background: rgba(101, 255, 188, 0.434);
-        border: 1px solid rgba(255, 255, 255, 0.944);
+        background: rgba(101, 255, 188, 0.753);
+        border: 1px solid rgba(255, 255, 255, 0.932);
         font-weight: 600;
-        color: white;
+        color: rgb(243, 243, 243);
         font-size: 14px;
     }
+
+    .mobile_button > .mobile_butt::after{
+        padding: 10px;
+        width: 60%;
+        border-radius: 15px;
+        background: rgba(101, 255, 188, 0.753);
+        border: 1px solid rgba(255, 255, 255, 0.932);
+        font-weight: 600;
+        color: rgb(243, 243, 243);
+        font-size: 14px;
+    }
+
+
+
 }
